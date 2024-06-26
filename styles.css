@@ -1,0 +1,450 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Default background color */
+    color: #333; /* Default text color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding-top: 80px;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff4500; /* Vibrant button color */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e63946; /* Darker shade on hover */
+}
+
+/* Hero Section */
+#hero {
+    background-color: #6c5ce7; /* Example of a colorful background */
+    color: #fff; /* White text color */
+    padding: 100px 0;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for contrast */
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for contrast */
+}
+
+/* Appointment Booking */
+#booking {
+    background-color: #8e44ad; /* Example of a colorful background */
+    padding: 60px 0;
+}
+
+#booking .btn {
+    margin-bottom: 20px; /* Adjusted margin between buttons */
+}
+
+#booking form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff; /* White background for form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#booking form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#booking form input[type="date"],
+#booking form input[type="time"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Counselor Directory */
+#counselors {
+    background-color: #fdcb6e; /* Example of a colorful background */
+    text-align: center;
+    padding: 60px 0;
+    color: #333; /* Dark text color */
+}
+
+#counselors h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Adjusted Button Margin */
+#counselors .btn {
+    margin-bottom: 20px;
+}
+
+/* Chat Rooms */
+#chat {
+    background-color: #fd79a8; /* Example of a colorful background */
+    text-align: center;
+    padding: 60px 0;
+}
+
+#chat #chat-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#chat #chat-form input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#chat #chat-form button {
+    padding: 12px 24px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    background-color: #ff4500; /* Vibrant button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#chat #chat-form button:hover {
+    background-color: #e63946; /* Darker shade on hover */
+}
+
+/* Resources */
+.resource-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.resource-item {
+    background-color: #00b894; /* Example of a colorful background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.resource-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fff; /* White text color */
+}
+
+.resource-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.resource-item a:hover {
+    color: #ff4500; /* Vibrant color on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+/* Colorful Animations */
+@keyframes colorfulAnimation {
+    0% { background-color: #ffcccc; }
+    25% { background-color: #ccffcc; }
+    50% { background-color: #ccccff; }
+    75% { background-color: #ffffcc; }
+    100% { background-color: #ccffff; }
+}
+
+.animated-background {
+    animation: colorfulAnimation 10s infinite alternate;
+    /* Adjust animation duration and timing as needed */
+    position: relative;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding-top: 120px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    #hero {
+        padding: 80px 0;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .resource-list {
+        grid-template-columns: 1fr;
+    }
+}
+/* Success Stories */
+#success-stories {
+    background-color: #74b9ff; /* Example of a colorful background */
+    color: #fff; /* White text color */
+    padding: 60px 0;
+}
+
+#success-stories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.stories-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.stories-list .story-item {
+    background-color: #0984e3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.stories-list .story-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Interactive Quizzes */
+#quizzes {
+    background-color: #00cec9; /* Example of a colorful background */
+    color: #fff; /* White text color */
+    padding: 60px 0;
+}
+
+#quizzes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.quizzes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.quizzes-list .quiz-item {
+    background-color: #00b894;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.quizzes-list .quiz-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Meditation and Relaxation */
+#meditation {
+    background-color: #fdcb6e; /* Example of a colorful background */
+    color: #fff; /* White text color */
+    padding: 60px 0;
+}
+
+#meditation h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.meditation-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.meditation-list .meditation-item {
+    background-color: #e17055;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.meditation-list .meditation-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Mental Health News */
+#news {
+    background-color: #a29bfe; /* Example of a colorful background */
+    color: #fff; /* White text color */
+    padding: 60px 0;
+}
+
+#news h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.news-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.news-list .news-item {
+    background-color: #6c5ce7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.news-list .news-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+
+.note {
+    background-color: green;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+}
+.note-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.note-btn:hover {
+    background-color: #0056b3;
+}

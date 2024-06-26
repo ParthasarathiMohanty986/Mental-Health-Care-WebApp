@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <h1>Mental Health Support Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#counselors">Counselors</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#chat">Chat</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Welcome to Your Mental Wellness Journey</h1>
+                <p>Find support and resources for mental health and well-being.</p>
+                <a href="#counselors" class="btn">Find a Counselor</a>
+            </div>
+        </section>
+
+        <!-- Counselor Directory -->
+        <section id="counselors">
+            <div class="container">
+                <h2>Counselor Directory</h2>
+                <div class="counselor-list">
+                    <!-- Counselor Cards dynamically populated using JavaScript -->
+                </div>
+                <a href="#booking" class="btn">Book Appointment</a>
+            </div>
+        </section>
+
+        <!-- Appointment Booking -->
+        <section id="booking">
+            <div class="container">
+                <h2>Book an Appointment</h2>
+                <form id="appointment-form">
+                    <label for="date">Select Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Select Time:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <button type="submit" class="btn">Book Appointment</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Chat Rooms -->
+        <section id="chat">
+            <div class="container">
+                <h2>Anonymous Chat Rooms</h2>
+                <div id="chat-room"></div>
+                <form id="chat-form">
+                    <input type="text" id="message-input" placeholder="Type your message...">
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Mental Health Resources -->
+        <section id="resources">
+            <div class="container">
+                <h2>Mental Health Resources</h2>
+                <div class="resource-list">
+                    <!-- Articles and resources dynamically populated using JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Success Stories -->
+<section id="success-stories">
+    <div class="container">
+        <h2>Success Stories</h2>
+        <div class="stories-list">
+            <!-- Success stories dynamically populated using JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- Interactive Quizzes -->
+<section id="quizzes">
+    <div class="container">
+        <h2>Interactive Quizzes</h2>
+        <div class="quizzes-list">
+            <div class="quiz-item">
+                <h3><a href="#">Mental Health Self-Assessment</a></h3>
+                <p>Take this quiz to assess your mental health status.</p>
+            </div>
+            <div class="quiz-item">
+                <h3><a href="#">Stress Level Quiz</a></h3>
+                <p>Find out how stressed you are with this quick quiz.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Meditation and Relaxation -->
+<section id="meditation">
+    <div class="container">
+        <h2>Meditation and Relaxation</h2>
+        <div class="meditation-list">
+            <div class="meditation-item">
+                <h3><a href="#">Guided Meditation for Beginners</a></h3>
+                <p>Start your meditation journey with this guided session.</p>
+                <button class="note-btn" onclick="showNote('note1')">Read Notes</button>
+                <div id="note1" class="note" style="display: none;">
+                    <p>Meditation helps in reducing stress, improving concentration, and enhancing self-awareness. Start with short sessions and gradually increase the duration.</p>
+                </div>
+            </div>
+            <div class="meditation-item">
+                <h3><a href="#">Breathing Exercises</a></h3>
+                <p>Learn effective breathing techniques to relax and reduce stress.</p>
+                <button class="note-btn" onclick="showNote('note2')">Read Notes</button>
+                <div id="note2" class="note" style="display: none;">
+                    <p>Deep breathing exercises can help lower heart rate and reduce anxiety. Practice deep breathing in a quiet place for better results.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mental Health Support Platform. All rights reserved.</p>
+            <p>Made with <span>&#10084;</span> by Partha Sarathi Mohanty</p>
+        </div>
+    </footer>
+   
+    
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
